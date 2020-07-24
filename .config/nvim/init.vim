@@ -79,6 +79,8 @@ augroup interface
 	" Automatically close NERDTree if it's the last tab
 	autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 	autocmd BufEnter * call ncm2#enable_for_buffer()
+
+	autocmd VimResized * wincmd =
 augroup END
 
 " Remap <Leader>
