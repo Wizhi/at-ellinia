@@ -50,6 +50,22 @@ endfunction
 
 call UseTabs()
 
+" http://www.agillo.net/simple-vim-window-management/
+function! WinMoveOrSplit(direction)
+	let t:curwin = winnr()
+
+	exec 'wincmd ' . a:direction
+
+	if (t:curwin == winnr())
+		if (match(a:direction,'[jk]'))
+			wincmd v
+		else
+			wincmd s
+		endif
+		exec 'wincmd ' . a:direction
+	endif
+endfunction
+
 let g:airline_extensions = ['bufferline']
 let g:airline#extensions#bufferline#enabled = 1
 let g:airline#extensions#bufferline#overwrite_variables = 1
@@ -97,9 +113,18 @@ nmap <Leader><Enter> :nohlsearch<CR>
 
 map <Leader>n :NERDTreeToggle<CR>
 
+nmap <Leader>h :call WinMoveOrSplit('h')<CR>
+nmap <Leader>j :call WinMoveOrSplit('j')<CR>
+nmap <Leader>k :call WinMoveOrSplit('k')<CR>
+nmap <Leader>l :call WinMoveOrSplit('l')<CR>
+nmap <leader>H :wincmd H<CR>
+nmap <leader>K :wincmd K<CR>
+nmap <leader>L :wincmd L<CR>
+nmap <leader>J :wincmd J<CR>
+nmap <leader><C-j> :wincmd q<CR>
+
 nmap <Leader>f :Files<CR>
 nmap <Leader>g :GFiles<CR>
 nmap <Leader>G :GFiles?<CR>
 nmap <Leader><Tab> :Buffers<CR>
-nmap <Leader>l :Lines<CR>
 nmap <Leader>s :Rg<Space>
