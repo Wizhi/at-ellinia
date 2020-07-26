@@ -1,5 +1,6 @@
 call plug#begin(stdpath('data') . '/plugged')
 
+Plug 'https://github.com/chriskempson/base16-vim'
 Plug 'https://github.com/sheerun/vim-polyglot'
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/bling/vim-bufferline'
@@ -17,10 +18,15 @@ Plug 'https://github.com/ervandew/supertab'
 
 call plug#end()
 
+" It's ugly how this isn't scoped, but that's required
+let base16colorspace=256
+
 set updatetime=100
 set completeopt=noinsert,menuone,noselect
 set relativenumber
 set wildignore=""
+
+colorscheme base16-gruvbox-dark-pale
 
 function! UseTabs()
 	set tabstop=4	  " Size of a hard tabstop (ts).
