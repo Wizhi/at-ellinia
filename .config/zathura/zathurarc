@@ -1,1 +1,3 @@
 set selection-clipboard clipboard
+
+include base16-zathura/build_schemes/base16-gruvbox-dark-pale.config
