@@ -30,7 +30,7 @@ xmap <silent> <buffer> <Leader>ca <Plug>(omnisharp_code_actions)
 
 nmap <silent> <buffer> <Leader>os= <Plug>(omnisharp_code_format)
 
-nmap <silent> <buffer> <Leader>rn <Plug>(omnisharp_rename)
+nmap <silent> <buffer> <Leader>r <Plug>(omnisharp_rename)
 
 nmap <silent> <buffer> <Leader>osre <Plug>(omnisharp_restart_server)
 nmap <silent> <buffer> <Leader>osst <Plug>(omnisharp_start_server)
