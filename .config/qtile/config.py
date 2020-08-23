@@ -120,7 +120,7 @@ groups = [Group(name, **kwargs) for name, kwargs in [
     ("5", {
         "label": "ssh",
         "layout": "max",
-        "layouts": [layout.Max()],
+        "layouts": [layout.Max(), layout.MonadTall(), layout.MonadWide()],
     }),
     ("9", {
         "label": "dck",
