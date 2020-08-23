@@ -15,6 +15,7 @@ Plug 'https://github.com/ncm2/ncm2'
 Plug 'https://github.com/ncm2/ncm2-path'
 Plug 'https://github.com/roxma/nvim-yarp'
 Plug 'https://github.com/ervandew/supertab'
+Plug 'https://github.com/mattn/emmet-vim'
 
 call plug#end()
 
