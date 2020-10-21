@@ -20,5 +20,5 @@
 	path = .local/share/zsh/plugins/zsh-users/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
 [submodule ".local/share/base16-shell"]
-	path = .local/share/base16-shell
+	path = .local/share/zsh/plugins/wizhi/base16-shell
 	url = https://github.com/Wizhi/base16-shell
