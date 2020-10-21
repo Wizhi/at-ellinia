@@ -1,6 +1,8 @@
 setopt autocd extendedglob nomatch notify
 unsetopt beep
 
+#zmodload zsh/zprof
+
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less
@@ -14,5 +16,7 @@ do
 done
 
 unset config
+
+#zprof
 
 eval "$(starship init zsh)"
