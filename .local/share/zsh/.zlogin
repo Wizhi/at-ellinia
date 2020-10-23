@@ -5,5 +5,8 @@
 	zrecompile -pq "${ZDOTDIR}/.zshrc"
 	zrecompile -pq "${ZDOTDIR}/.zshenv"
 	zrecompile -pq "${ZDOTDIR}/.zlogin"
-	zrecompile -pq "${ZDOTDIR}/rc.d/*.zsh"
+
+	for config in "${ZDOTDIR}"/rc.d/*.zsh; do
+		zrecompile -pq "${config}"
+	done
 } &!
