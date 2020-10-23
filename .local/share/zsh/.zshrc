@@ -18,5 +18,3 @@ done
 unset config
 
 #zprof
-
-eval "$(starship init zsh)"
