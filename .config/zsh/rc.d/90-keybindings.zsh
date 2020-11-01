@@ -3,7 +3,7 @@ bindkey -v
 bindkey '^?' backward-delete-char
 bindkey '^l' clear-screen
 
-# Adds vi-like search, keeping in mind that we more often than not wish to look 
+# Adds vi-style search, keeping in mind that we more often than not wish to look 
 # backwards in history.
 bindkey -M vicmd '/' vi-history-search-backward
 bindkey -M vicmd '?' vi-history-search-forward
@@ -15,6 +15,18 @@ bindkey -M viins '^P' history-beginning-search-forward
 # Buffer history control
 bindkey -M vicmd 'u' undo
 bindkey -M vicmd '^r' redo
+
+# vi-style completion menu selection
+# Classical <C-n> style, and more interactive hjkl style
+bindkey -M menuselect '^[' send-break
+bindkey -M menuselect '^N' vi-down-line-or-history
+bindkey -M menuselect '^P' vi-up-line-or-history
+
+bindkey -M menuselect 'u' send-break
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
 
 # Edit buffer in $EDITOR
 # https://sourceforge.net/p/zsh/code/ci/master/tree/Functions/Zle/edit-command-line
