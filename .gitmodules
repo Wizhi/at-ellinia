@@ -22,45 +22,48 @@
 [submodule ".local/share/base16-shell"]
 	path = .config/zsh/plugins/wizhi/base16-shell
 	url = https://github.com/Wizhi/base16-shell
-[submodule ".config/nvim/pack/ale/start/ale"]
+[submodule "nvim/ale"]
 	path = .config/nvim/pack/ale/start/ale
 	url = https://github.com/dense-analysis/ale
-[submodule ".config/nvim/pack/emmet/opt/emmet"]
+[submodule "nvim/base16"]
+	path = .config/nvim/pack/colors/start/base16
+	url = https://github.com/chriskempson/base16-vim
+[submodule "nvim/emmet"]
 	path = .config/nvim/pack/emmet/opt/emmet
 	url = https://github.com/mattn/emmet-vim
-[submodule ".config/nvim/pack/fzf/start/fzf"]
-	path = .config/nvim/pack/fzf/start/fzf
-	url = https://github.com/junegunn/fzf
-[submodule ".config/nvim/pack/fzf/start/fzf.vim"]
-	path = .config/nvim/pack/fzf/start/fzf.vim
-	url = https://github.com/junegunn/fzf.vim
-[submodule ".config/nvim/pack/language-server/start/omnisharp"]
-	path = .config/nvim/pack/language-server/start/omnisharp
-	url = https://github.com/OmniSharp/omnisharp-vim/
-[submodule ".config/nvim/pack/language-server/start/nvim-lspconfig"]
-	path = .config/nvim/pack/language-server/start/nvim-lspconfig
-	url = https://github.com/neovim/nvim-lspconfig/
-[submodule ".config/nvim/pack/languages/start/polyglot"]
-	path = .config/nvim/pack/languages/start/polyglot
-	url = https://github.com/sheerun/vim-polyglot
-[submodule ".config/nvim/pack/nerdtree/start/nerdtree"]
-	path = .config/nvim/pack/nerdtree/start/nerdtree
-	url = https://github.com/preservim/nerdtree
-[submodule ".config/nvim/pack/nerdtree/start/nerdtree-git-plugin"]
-	path = .config/nvim/pack/nerdtree/start/nerdtree-git-plugin
-	url = https://github.com/Xuyuanp/nerdtree-git-plugin
-[submodule ".config/nvim/pack/fugitive/start/fugitive"]
+[submodule "nvim/fugitive"]
 	path = .config/nvim/pack/fugitive/start/fugitive
 	url = https://github.com/tpope/vim-fugitive
-[submodule ".config/nvim/pack/ncm2/start/ncm2"]
+[submodule "nvim/fzf"]
+	path = .config/nvim/pack/fzf/start/fzf
+	url = https://github.com/junegunn/fzf
+[submodule "nvim/fzf.vim"]
+	path = .config/nvim/pack/fzf/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+[submodule "nvim/lspconfig"]
+	path = .config/nvim/pack/languages/start/lspconfig
+	url = https://github.com/neovim/nvim-lspconfig
+[submodule "nvim/omnisharp"]
+	path = .config/nvim/pack/languages/start/omnisharp
+	url = https://github.com/OmniSharp/omnisharp-vim
+[submodule "nvim/polyglot"]
+	path = .config/nvim/pack/languages/start/polyglot
+	url = https://github.com/sheerun/vim-polyglot
+[submodule "nvim/ncm2"]
 	path = .config/nvim/pack/ncm2/start/ncm2
 	url = https://github.com/ncm2/ncm2
-[submodule ".config/nvim/pack/ncm2/start/ncm2-path"]
+[submodule "nvim/ncm2-path"]
 	path = .config/nvim/pack/ncm2/start/ncm2-path
 	url = https://github.com/ncm2/ncm2-path
-[submodule ".config/nvim/pack/ncm2/start/nvim-yarp"]
+[submodule "nvim/yarp"]
 	path = .config/nvim/pack/ncm2/start/nvim-yarp
 	url = https://github.com/roxma/nvim-yarp
-[submodule ".config/nvim/pack/statusline/start/airline"]
+[submodule "nvim/nerdtree"]
+	path = .config/nvim/pack/nerdtree/start/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule "nvim/nerdtree-git"]
+	path = .config/nvim/pack/nerdtree/start/nerdtree-git
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin
+[submodule "nvim/airline"]
 	path = .config/nvim/pack/statusline/start/airline
 	url = https://github.com/vim-airline/vim-airline
