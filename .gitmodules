@@ -11,16 +11,16 @@
 	path = .local/share/zsh/plugins/zsh-users/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
 [submodule ".local/share/zsh/plugins/zsh-users/zsh-completions"]
-	path = .local/share/zsh/plugins/zsh-users/zsh-completions
+	path = .config/zsh/plugins/zsh-users/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions
 [submodule ".local/share/zsh/plugins/zsh-users/zsh-syntax-highlighting"]
-	path = .local/share/zsh/plugins/zsh-users/zsh-syntax-highlighting
+	path = .config/zsh/plugins/zsh-users/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
 [submodule ".local/share/zsh/plugins/zsh-users/zsh-autosuggestions"]
-	path = .local/share/zsh/plugins/zsh-users/zsh-autosuggestions
+	path = .config/zsh/plugins/zsh-users/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
 [submodule ".local/share/base16-shell"]
-	path = .local/share/zsh/plugins/wizhi/base16-shell
+	path = .config/zsh/plugins/wizhi/base16-shell
 	url = https://github.com/Wizhi/base16-shell
 [submodule ".config/nvim/pack/ale/start/ale"]
 	path = .config/nvim/pack/ale/start/ale
