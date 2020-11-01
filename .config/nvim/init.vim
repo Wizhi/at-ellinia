@@ -3,9 +3,10 @@ set completeopt=noinsert,menuone,noselect
 set relativenumber
 set wildignore=""
 
+set termguicolors
 let base16colorspace=256
 
-colorscheme base16-gruvbox-dark-pale
+colorscheme $BASE16_THEME
 
 function! UseTabs()
 	set tabstop=4	  " Size of a hard tabstop (ts).
