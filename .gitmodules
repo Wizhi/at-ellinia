@@ -58,3 +58,6 @@
 [submodule "zsh/syntax-highlighting"]
 	path = .config/zsh/plugins/syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule "nvim/airline-themes"]
+	path = .config/nvim/pack/statusline/start/airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
