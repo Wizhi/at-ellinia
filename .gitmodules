@@ -1,27 +1,6 @@
 [submodule ".config/zathura/base16-zathura"]
 	path = .config/zathura/base16-zathura
 	url = https://github.com/HaoZeke/base16-zathura
-[submodule ".local/share/zsh/zinit"]
-	path = .local/share/zsh/zinit
-	url = https://github.com/zdharma/zinit
-[submodule ".local/share/zsh/plugins/zsh-syntax-highlightin"]
-	path = .local/share/zsh/plugins/zsh-users/zsh-syntax-highlighting
-	url = https://github.com/zsh-users/zsh-syntax-highlighting
-[submodule ".local/share/zsh/plugins/zsh-autosuggestions"]
-	path = .local/share/zsh/plugins/zsh-users/zsh-autosuggestions
-	url = https://github.com/zsh-users/zsh-autosuggestions
-[submodule ".local/share/zsh/plugins/zsh-users/zsh-completions"]
-	path = .config/zsh/plugins/zsh-users/zsh-completions
-	url = https://github.com/zsh-users/zsh-completions
-[submodule ".local/share/zsh/plugins/zsh-users/zsh-syntax-highlighting"]
-	path = .config/zsh/plugins/zsh-users/zsh-syntax-highlighting
-	url = https://github.com/zsh-users/zsh-syntax-highlighting
-[submodule ".local/share/zsh/plugins/zsh-users/zsh-autosuggestions"]
-	path = .config/zsh/plugins/zsh-users/zsh-autosuggestions
-	url = https://github.com/zsh-users/zsh-autosuggestions
-[submodule ".local/share/base16-shell"]
-	path = .config/zsh/plugins/wizhi/base16-shell
-	url = https://github.com/Wizhi/base16-shell
 [submodule "nvim/ale"]
 	path = .config/nvim/pack/ale/start/ale
 	url = https://github.com/dense-analysis/ale
@@ -67,3 +46,15 @@
 [submodule "nvim/airline"]
 	path = .config/nvim/pack/statusline/start/airline
 	url = https://github.com/vim-airline/vim-airline
+[submodule "zsh/base16"]
+	path = .config/zsh/plugins/base16
+	url = https://github.com/Wizhi/base16-shell
+[submodule "zsh/autosuggestions"]
+	path = .config/zsh/plugins/autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "zsh/completions"]
+	path = .config/zsh/plugins/completions
+	url = https://github.com/zsh-users/zsh-completions
+[submodule "zsh/syntax-highlighting"]
+	path = .config/zsh/plugins/syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting

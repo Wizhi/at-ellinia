@@ -1,1 +1,1 @@
-source "${ZSH_PLUGINS}/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "${ZSH_PLUGINS}/syntax-highlighting/zsh-syntax-highlighting.zsh"

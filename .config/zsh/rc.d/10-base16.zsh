@@ -1,1 +1,1 @@
-eval "$("${ZSH_PLUGINS}/wizhi/base16-shell/profile_helper.sh")"
+eval "$("${ZSH_PLUGINS}/base16/profile_helper.sh")"

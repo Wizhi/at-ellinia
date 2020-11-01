@@ -1,4 +1,4 @@
-fpath+="${ZSH_PLUGINS}/zsh-users/zsh-completions/src"
+fpath+="${ZSH_PLUGINS}/zsh-completions/src"
 
 autoload -Uz compinit
 
