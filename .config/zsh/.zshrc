@@ -6,8 +6,6 @@ export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less
 
-bindkey -v
-
 for config in "${ZDOTDIR}"/rc.d/*; do
 	source "${config}"
 done
