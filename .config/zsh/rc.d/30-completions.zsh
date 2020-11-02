@@ -2,7 +2,7 @@ fpath+="${ZSH_PLUGINS}/zsh-completions/src"
 
 autoload -Uz compinit
 
-zstyle ':completion:*' menu select=10
+zstyle ':completion:*' menu yes select=10
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 zmodload zsh/complist

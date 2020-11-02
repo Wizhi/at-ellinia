@@ -28,6 +28,8 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 
+bindkey -M viins '^[[Z' reverse-menu-complete
+
 # Edit buffer in $EDITOR
 # https://sourceforge.net/p/zsh/code/ci/master/tree/Functions/Zle/edit-command-line
 autoload -Uz edit-command-line
