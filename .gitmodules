@@ -61,3 +61,6 @@
 [submodule "nvim/airline-themes"]
 	path = .config/nvim/pack/statusline/start/airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "zsh/powerlevel10k"]
+	path = .config/zsh/plugins/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k
