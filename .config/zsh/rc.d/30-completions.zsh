@@ -14,8 +14,6 @@ zstyle ':completion:*' completer _complete _match _approximate
 zstyle ':completion:*:match:*' original only
 zstyle ':completion:*:approximate:*' max-errors 1 numeric
 
-zmodload zsh/complist
-
 # Only dump completion cache once a day
 # https://gist.github.com/ctechols/ca1035271ad134841284
 if [[ -n "${ZSH_CACHE}"/zcompdump(#qN.mh+24) ]]; then

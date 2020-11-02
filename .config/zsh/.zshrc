@@ -1,4 +1,6 @@
 #zmodload zsh/zprof
+zmodload zsh/complist
+
 setopt autocd extendedglob nomatch notify
 unsetopt beep
 
@@ -11,5 +13,4 @@ for config in "${ZDOTDIR}"/rc.d/*; do
 done
 
 unset config
-
 #zprof
