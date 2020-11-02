@@ -1,7 +1,7 @@
 bindkey -v
 
-bindkey '^?' backward-delete-char
-bindkey '^l' clear-screen
+bindkey -M viins '^l' clear-screen
+bindkey -M viins '^?' backward-delete-char
 
 # Adds vi-style search, keeping in mind that we more often than not wish to look 
 # backwards in history.
