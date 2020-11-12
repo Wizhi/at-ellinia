@@ -67,3 +67,6 @@
 [submodule "nvim/diagnostics"]
 	path = .config/nvim/pack/languages/start/diagnostics
 	url = https://github.com/nvim-lua/diagnostic-nvim
+[submodule "nvim/gitgutter"]
+	path = .config/nvim/pack/git/start/gitgutter
+	url = https://github.com/airblade/vim-gitgutter
