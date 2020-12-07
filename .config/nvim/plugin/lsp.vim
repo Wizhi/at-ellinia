@@ -1,28 +1,27 @@
-let g:diagnostic_enable_virtual_text = 0
-let g:diagnostic_enable_underline = 1
+highlight link LspDiagnosticsSignError Error
+highlight link LspDiagnosticsSignWarning Todo
+"highlight link LspDiagnosticsSignInfo
+"highlight link LspDiagnosticsSignHint
 
-"highlight link LspDiagnosticsHint
-"highlight link LspDiagnosticsInfo
-highlight link LspDiagnosticsWarning Todo
-highlight link LspDiagnosticsError Error
+sign define LspDiagnosticsSignError text=>> texthl=LspDiagnosticsSignError linehl= numhl=
+sign define LspDiagnosticsSignWarning text=-- texthl=LspDiagnosticsSignWarning linehl= numhl=
+sign define LspDiagnosticsSignInformation text=I texthl=LspDiagnosticsSignInformation linehl= numhl=
+sign define LspDiagnosticsSignHint text=H texthl=LspDiagnosticsSignHint linehl= numhl=
 
-"highlight link LspDiagnosticsUnderlineHint
-"highlight link LspDiagnosticsUnderlineInfo
-highlight link LspDiagnosticsUnderlineWarning Todo
-highlight link LspDiagnosticsUnderlineError Error
+lua << EOF
+	vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+		vim.lsp.diagnostic.on_publish_diagnostics, {
+			underline = true,
+			virtual_text = false,
+			signs = true,
+			update_in_insert = true,
+		}
+	);
 
-call sign_define("LspDiagnosticsHintSign", {"text" : "H", "texthl" : "LspDiagnosticsHint"})
-call sign_define("LspDiagnosticsInformationSign", {"text" : "I", "texthl" : "LspDiagnosticsInformation"})
-call sign_define("LspDiagnosticsWarningSign", {"text" : "--", "texthl" : "LspDiagnosticsWarning"})
-call sign_define("LspDiagnosticsErrorSign", {"text" : ">>", "texthl" : "LspDiagnosticsError"})
-
-lua <<EOF
 	local lsp = require('nvim_lsp');
-	local diagnostic = require('diagnostic');
 	local ncm2 = require('ncm2');
 
 	lsp.rust_analyzer.setup({
-		on_init = ncm2.register_lsp_source,
-		on_attach = diagnostic.on_attach
+		on_init = ncm2.register_lsp_source
 	});
 EOF
