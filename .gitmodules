@@ -2,49 +2,49 @@
 	path = .config/zathura/base16-zathura
 	url = https://github.com/HaoZeke/base16-zathura
 [submodule "nvim/ale"]
-	path = .config/nvim/pack/ale/opt/ale
+	path = .config/nvim/pack/wizhi/opt/ale
 	url = https://github.com/dense-analysis/ale
 [submodule "nvim/base16"]
-	path = .config/nvim/pack/colors/start/base16
+	path = .config/nvim/pack/wizhi/start/base16
 	url = https://github.com/chriskempson/base16-vim
 [submodule "nvim/emmet"]
-	path = .config/nvim/pack/emmet/opt/emmet
+	path = .config/nvim/pack/wizhi/opt/emmet
 	url = https://github.com/mattn/emmet-vim
 [submodule "nvim/fugitive"]
-	path = .config/nvim/pack/fugitive/start/fugitive
+	path = .config/nvim/pack/wizhi/start/fugitive
 	url = https://github.com/tpope/vim-fugitive
 [submodule "nvim/fzf"]
-	path = .config/nvim/pack/fzf/start/fzf
+	path = .config/nvim/pack/wizhi/start/fzf
 	url = https://github.com/junegunn/fzf
 [submodule "nvim/fzf.vim"]
-	path = .config/nvim/pack/fzf/start/fzf.vim
+	path = .config/nvim/pack/wizhi/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
 [submodule "nvim/lspconfig"]
-	path = .config/nvim/pack/languages/start/lspconfig
+	path = .config/nvim/pack/wizhi/start/lspconfig
 	url = https://github.com/neovim/nvim-lspconfig
 [submodule "nvim/omnisharp"]
-	path = .config/nvim/pack/languages/start/omnisharp
+	path = .config/nvim/pack/wizhi/start/omnisharp
 	url = https://github.com/OmniSharp/omnisharp-vim
 [submodule "nvim/polyglot"]
-	path = .config/nvim/pack/languages/start/polyglot
+	path = .config/nvim/pack/wizhi/start/polyglot
 	url = https://github.com/sheerun/vim-polyglot
 [submodule "nvim/ncm2"]
-	path = .config/nvim/pack/ncm2/start/ncm2
+	path = .config/nvim/pack/wizhi/start/ncm2
 	url = https://github.com/ncm2/ncm2
 [submodule "nvim/ncm2-path"]
-	path = .config/nvim/pack/ncm2/start/ncm2-path
+	path = .config/nvim/pack/wizhi/start/ncm2-path
 	url = https://github.com/ncm2/ncm2-path
 [submodule "nvim/yarp"]
-	path = .config/nvim/pack/ncm2/start/nvim-yarp
+	path = .config/nvim/pack/wizhi/start/nvim-yarp
 	url = https://github.com/roxma/nvim-yarp
 [submodule "nvim/nerdtree"]
-	path = .config/nvim/pack/nerdtree/start/nerdtree
+	path = .config/nvim/pack/wizhi/start/nerdtree
 	url = https://github.com/preservim/nerdtree
 [submodule "nvim/nerdtree-git"]
-	path = .config/nvim/pack/nerdtree/start/nerdtree-git
+	path = .config/nvim/pack/wizhi/start/nerdtree-git
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin
 [submodule "nvim/airline"]
-	path = .config/nvim/pack/statusline/start/airline
+	path = .config/nvim/pack/wizhi/start/airline
 	url = https://github.com/vim-airline/vim-airline
 [submodule "zsh/base16"]
 	path = .config/zsh/plugins/base16
@@ -59,11 +59,11 @@
 	path = .config/zsh/plugins/syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
 [submodule "nvim/airline-themes"]
-	path = .config/nvim/pack/statusline/start/airline-themes
+	path = .config/nvim/pack/wizhi/start/airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
 [submodule "zsh/powerlevel10k"]
 	path = .config/zsh/plugins/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k
 [submodule "nvim/gitgutter"]
-	path = .config/nvim/pack/git/start/gitgutter
+	path = .config/nvim/pack/wizhi/start/gitgutter
 	url = https://github.com/airblade/vim-gitgutter
