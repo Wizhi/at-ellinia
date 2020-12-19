@@ -67,3 +67,6 @@
 [submodule "zsh/powerlevel10k"]
 	path = .config/zsh/plugins/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k
+[submodule "nvim/vim-startify"]
+	path = .config/nvim/pack/wizhi/start/vim-startify
+	url = https://github.com/mhinz/vim-startify
