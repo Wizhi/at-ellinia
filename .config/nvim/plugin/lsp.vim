@@ -18,7 +18,7 @@ lua << EOF
 		}
 	);
 
-	local lsp = require('nvim_lsp');
+	local lsp = require('lspconfig');
 	local ncm2 = require('ncm2');
 
 	lsp.rust_analyzer.setup({
