@@ -18,12 +18,6 @@ $ dotfiles lfs pull
 The `dotfiles checkout` will copy all dotfiles into `$HOME`, and will fail if any of these already exists.
 If this happens, the only fix is to backup the existing files and `dotfiles checkout` again.
 
-To use `zsh`, simply create a symbolic link for `.zshenv`, and it will bootstrap itself.
-
-```bash
-$ ln -s $HOME/.zshenv $HOME/.config/zsh/.zshenv
-```
-
 # Current annoyances
 
 It seems like autocomplete is broken for the `dotfiles` alias, which really sucks.

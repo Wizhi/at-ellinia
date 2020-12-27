@@ -1,14 +1,3 @@
-# Determine own path if ZDOTDIR isn't set or home symlink exists
-if [[ ! -v ZDOTDIR ]]; then
-	if [[ -L "${HOME}/.zshenv" ]]; then
-		local homezshenv="${HOME}/.zshenv"
-
-		ZDOTDIR="${homezshenv:A:h}"
-	else
-		ZDOTDIR="${HOME}"
-	fi
-fi
-
 # XDG basedir spec compliance
 if [[ ! -v XDG_CONFIG_HOME ]]; then
 	export XDG_CONFIG_HOME"=${HOME}/.config"
@@ -24,6 +13,10 @@ fi
 
 if [[ ! -v XDG_RUNTIME_DIR ]]; then
 	export XDG_RUNTIME_DIR="${TMPDIR:-/tmp}/runtime-${USER}"
+fi
+
+if [[ ! -v ZDOTDIR ]]; then
+	ZDOTDIR="${XDG_CONFIG_HOME}/zsh"
 fi
 
 ZSH_PLUGINS="${ZDOTDIR}/plugins"
