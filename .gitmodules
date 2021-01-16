@@ -82,3 +82,6 @@
 [submodule "nvim/papercolor-theme"]
 	path = .config/nvim/pack/wizhi/start/papercolor-theme
 	url = https://github.com/NLKNguyen/papercolor-theme
+[submodule "nvim/apprentice"]
+	path = .config/nvim/pack/wizhi/start/apprentice
+	url = https://github.com/romainl/Apprentice
