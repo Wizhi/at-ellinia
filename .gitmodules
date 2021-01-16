@@ -79,3 +79,6 @@
 [submodule "nvim/vim-one"]
 	path = .config/nvim/pack/wizhi/start/vim-one
 	url = https://github.com/rakr/vim-one
+[submodule "nvim/papercolor-theme"]
+	path = .config/nvim/pack/wizhi/start/papercolor-theme
+	url = https://github.com/NLKNguyen/papercolor-theme
