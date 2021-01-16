@@ -73,3 +73,9 @@
 [submodule "nvim/editorconfig-vim"]
 	path = .config/nvim/pack/wizhi/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim
+[submodule "nvim/seoul256.vim"]
+	path = .config/nvim/pack/wizhi/start/seoul256.vim
+	url = https://github.com/junegunn/seoul256.vim
+[submodule "nvim/vim-one"]
+	path = .config/nvim/pack/wizhi/start/vim-one
+	url = https://github.com/rakr/vim-one
