@@ -52,9 +52,6 @@
 [submodule "nvim/vim-gitgutter"]
 	path = .config/nvim/pack/wizhi/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
-[submodule "zsh/base16"]
-	path = .config/zsh/plugins/base16
-	url = https://github.com/Wizhi/base16-shell
 [submodule "zsh/autosuggestions"]
 	path = .config/zsh/plugins/autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
