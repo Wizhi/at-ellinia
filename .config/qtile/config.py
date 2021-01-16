@@ -122,6 +122,11 @@ groups = [Group(name, **kwargs) for name, kwargs in [
         "layout": "max",
         "layouts": [layout.Max(), layout.MonadTall(), layout.MonadWide()],
     }),
+    ("8", {
+        "label": "doc",
+        "layout": "max",
+        "layouts": [layout.Max(), layout.MonadTall(), layout.MonadWide()],
+    }),
     ("9", {
         "label": "dck",
         "layout": "monadtall",
