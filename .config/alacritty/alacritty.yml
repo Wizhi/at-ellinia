@@ -20,6 +20,105 @@ window:
 font:
   size: 10.0
 
+schemes:
+  one-dark: &one-dark
+    primary:
+      background: '#282c34'
+      foreground: '#abb2bf'
+
+    cursor:
+      text:   CellBackground
+      cursor: '#528bff' # syntax-cursor-color
+
+    selection:
+      text:       CellForeground
+      background: '#3e4451' # syntax-selection-color
+
+    normal:
+      black:   '#5c6370' # mono-3
+      red:     '#e06c75' # red 1
+      green:   '#98c379'
+      yellow:  '#e5c07b' # orange 2
+      blue:    '#61afef'
+      magenta: '#c678dd'
+      cyan:    '#56b6c2'
+      white:   '#828997' # mono-2
+
+  one-light: &one-light
+    primary:
+      background: '#fafafa'
+      foreground: '#383a42'
+
+    cursor:
+      text:   CellBackground
+      cursor: '#526eff' # syntax-cursor-color
+
+    selection:
+      text:       CellForeground
+      background: '#e5e5e6' # syntax-selection-color
+
+    normal:
+      black:   '#696c77' # mono-2
+      red:     '#e45649' # red 1
+      green:   '#50a14f'
+      yellow:  '#c18401' # orange 2
+      blue:    '#4078f2'
+      magenta: '#a626a4'
+      cyan:    '#0184bc'
+      white:   '#a0a1a7' # mono-3
+
+  seoul256-dark: &seoul256-dark
+    primary:
+      background: '0x262626'
+      foreground: '0xd0d0d0'
+
+    normal:
+      black:   '0x000000'
+      red:     '0xba3c38'
+      green:   '0x5d8760'
+      yellow:  '0xd5a55f'
+      blue:    '0x88b0d5'
+      magenta: '0xcd5b6d'
+      cyan:    '0x61afac'
+      white:   '0xd0cfca'
+
+    bright:
+      black:   '0x000000'
+      red:     '0xea7173'
+      green:   '0x7aab87'
+      yellow:  '0xd2d6b0'
+      blue:    '0x88b0d5'
+      magenta: '0xe49f8a'
+      cyan:    '0x61afac'
+      white:   '0xd0cfca'
+
+  seoul256-light:
+    primary:
+      background: '0xdadada'
+      foreground: '0x444444'
+
+    normal:
+      black:   '0x434343'
+      red:     '0xba3c38'
+      green:   '0x5d8760'
+      yellow:  '0xa9824b'
+      blue:    '0x88b0d5'
+      magenta: '0xcd5985'
+      cyan:    '0x376361'
+      white:   '0xd0cfca'
+
+    bright:
+      black:   '0x5d5d5d'
+      red:     '0xea615f'
+      green:   '0x7aab87'
+      yellow:  '0xf8d58b'
+      blue:    '0x98c7f0'
+      magenta: '0xe599b3'
+      cyan:    '0x589e9b'
+      white:   '0xf4f2ec'
+
+colors: *one-dark
+
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
