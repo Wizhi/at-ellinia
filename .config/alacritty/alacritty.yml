@@ -142,7 +142,7 @@ schemes:
       cyan:    '0x5fafaf'
       white:   '0xffffff'
 
-colors: *apprentice
+colors: *one-dark
 
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
