@@ -1,0 +1,18 @@
+hook global WinCreate ^[^*]+$ %{
+    add-highlighter window number-lines
+}
+
+eval %sh{kak-lsp --kakoune -s $kak_session}  # Not needed if you load it with plug.kak.
+
+hook global WinSetOption filetype=go %{
+	lsp-enable-window
+	lsp-auto-hover-enable
+
+	hook window BufWritePre .* lsp-formatting-sync
+
+	map global user l %{: enter-user-mode lsp<ret>} -docstring "LSP mode"
+}
+
+hook global RegisterModified 'y' %{ nop %sh{
+	printf %s "$kak_main_reg_dquote" | xclip -in -selection clipboard >&- 2>&-
+}}
