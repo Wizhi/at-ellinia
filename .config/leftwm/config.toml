@@ -1,0 +1,157 @@
+modkey = "Mod4"
+mousekey = "Mod4"
+workspaces = []
+tags = ["dev", "sys", "www", "mus", "com"]
+layouts = ["MainAndVertStack", "MainAndHorizontalStack", "CenterMain", "Monocle"]
+disable_current_tag_swap = false
+
+[[keybind]]
+command = "Execute"
+value = "dmenu_run"
+modifier = ["modkey"]
+key = "p"
+
+[[keybind]]
+command = "Execute"
+value = "alacritty -e elvish"
+modifier = ["modkey"]
+key = "Return"
+
+[[keybind]]
+command = "CloseWindow"
+modifier = ["modkey", "Shift"]
+key = "d"
+
+[[keybind]]
+command = "SoftReload"
+modifier = ["modkey", "Shift"]
+key = "r"
+
+[[keybind]]
+command = "Execute"
+value = "pkill leftwm"
+modifier = ["modkey", "Shift"]
+key = "x"
+
+#[[keybind]]
+#command = "Execute"
+#value = "slock"
+#modifier = ["modkey", "Control"]
+#key = "l"
+
+[[keybind]]
+command = "MoveWindowUp"
+modifier = ["modkey", "Shift"]
+key = "k"
+
+[[keybind]]
+command = "MoveWindowDown"
+modifier = ["modkey", "Shift"]
+key = "j"
+
+[[keybind]]
+command = "MoveWindowTop"
+modifier = ["modkey", "Shift"]
+key = "Return"
+
+[[keybind]]
+command = "IncreaseMainWidth"
+value = "5"
+modifier = ["modkey", "Shift"]
+key = "l"
+
+[[keybind]]
+command = "DecreaseMainWidth"
+value = "5"
+modifier = ["modkey", "Shift"]
+key = "h"
+
+[[keybind]]
+command = "FocusWindowUp"
+modifier = ["modkey"]
+key = "k"
+
+[[keybind]]
+command = "FocusWindowDown"
+modifier = ["modkey"]
+key = "j"
+
+[[keybind]]
+command = "NextLayout"
+modifier = ["modkey", "Control"]
+key = "j"
+
+[[keybind]]
+command = "PreviousLayout"
+modifier = ["modkey", "Control"]
+key = "k"
+
+[[keybind]]
+command = "FocusWorkspaceNext"
+modifier = ["modkey", "Control"]
+key = "l"
+
+[[keybind]]
+command = "FocusWorkspacePrevious"
+modifier = ["modkey", "Control"]
+key = "h"
+
+[[keybind]]
+command = "GotoTag"
+value = "1"
+modifier = ["modkey"]
+key = "u"
+
+[[keybind]]
+command = "GotoTag"
+value = "2"
+modifier = ["modkey"]
+key = "i"
+
+[[keybind]]
+command = "GotoTag"
+value = "3"
+modifier = ["modkey"]
+key = "o"
+
+[[keybind]]
+command = "GotoTag"
+value = "4"
+modifier = ["modkey"]
+key = "n"
+
+[[keybind]]
+command = "GotoTag"
+value = "5"
+modifier = ["modkey"]
+key = "m"
+
+[[keybind]]
+command = "MoveToTag"
+value = "1"
+modifier = ["modkey", "Shift"]
+key = "u"
+
+[[keybind]]
+command = "MoveToTag"
+value = "2"
+modifier = ["modkey", "Shift"]
+key = "i"
+
+[[keybind]]
+command = "MoveToTag"
+value = "3"
+modifier = ["modkey", "Shift"]
+key = "o"
+
+[[keybind]]
+command = "MoveToTag"
+value = "4"
+modifier = ["modkey", "Shift"]
+key = "n"
+
+[[keybind]]
+command = "MoveToTag"
+value = "5"
+modifier = ["modkey", "Shift"]
+key = "m"
