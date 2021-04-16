@@ -1,0 +1,22 @@
+set hint-keys=asdfg;lkjh
+set editor-command=alacritty -e kak %s
+
+nunmap O
+nnoremap O :tabopen<Space>
+nnoremap go :open <C-R>%
+nnoremap gO :tabopen <C-R>%
+nnoremap u U
+nnoremap U u
+nnoremap y Y
+nnoremap Y y
+
+shortcut-add ddg=https://lite.duckduckgo.com/lite?q=$0
+shortcut-add map=https://www.openstreetmap.org/search?query=$0
+shortcut-add gh=https://github.com/search?q=$0
+shortcut-add ghu=https://github.com/$0
+shortcut-add ghr=https://github.com/$0/$1
+shortcut-add yt=https://www.youtube.com/results?search_query=$0
+
+shortcut-default ddg
+
+handler-add magnet=transmission-remote --add '%s'
