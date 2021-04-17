@@ -50,40 +50,16 @@ keys = [
         lazy.layout.shuffle_up()
     ),
     Key(
-        [mod], "space", 
-        lazy.layout.next() # Switch to next contextual window
-    ),
-    Key(
-        [mod, "shift"], "space", 
-        lazy.layout.rotate(), # Swap panes (Stack)
-        lazy.layout.flip()    # Switch master side (MonadTall, MonadWide)
-    ),
-    Key(
         [mod, "shift"], "Return", 
         lazy.layout.toggle_split() 
     ),
     Key(
         [mod], "h",
-        lazy.layout.shrink(),           # Shrink size of current window (MonadTall, MonadWide)
-        lazy.layout.decrease_nmaster(), # Decrease number in master pane (Tile)
+        lazy.layout.shrink_main(),
     ),
     Key(
         [mod], "l",
-        lazy.layout.grow(),             # Grow size of current window (MonadTall, MonadWide)
-        lazy.layout.increase_nmaster(), # Increase number in master pane (Tile)
-    ),
-    Key(
-         [mod], "n",
-         lazy.layout.normalize() # Restore all windows to default size ratios 
-    ),
-    Key(
-        [mod], "m",
-        lazy.layout.maximize(),    # Toggle a window between minimum and maximum sizes (MonadTall, ModalWide)
-        lazy.layout.toggle_split() # Toggle between split and unsplit (Stack)
-    ),
-    Key(
-        [mod], "f",
-        lazy.window.toggle_fullscreen(), # Toggle window fullscreen
+        lazy.layout.grow_main(),
     ),
     # Application
     Key(
