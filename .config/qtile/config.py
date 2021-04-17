@@ -136,12 +136,6 @@ for group in groups:
         Key([mod, "shift"], group.name, lazy.window.togroup(group.name))
     ])
 
-layouts = [
-    layout.Max(),
-    layout.Stack(num_stacks=2),
-    layout.MonadTall(),
-]
-
 widget_defaults = dict(
     font="monospace",
     fontsize=12,
