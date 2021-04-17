@@ -82,3 +82,6 @@
 [submodule "nvim/apprentice"]
 	path = .config/nvim/pack/wizhi/start/apprentice
 	url = https://github.com/romainl/Apprentice
+[submodule "kak/plug.kak"]
+	path = .config/kak/plugins/plug.kak
+	url = https://github.com/andreyorst/plug.kak
