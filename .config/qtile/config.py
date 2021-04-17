@@ -90,45 +90,35 @@ keys = [
     ),
     Key(
         [mod], "Return", 
-        lazy.spawn("alacritty -e elvish")
+        lazy.spawn("alacritty")
     ),
 ]
 
 groups = [Group(name, **kwargs) for name, kwargs in [
-    ("1", {
+    ("u", {
         "label": "dev",
         "layout": "max",
         "layouts": [layout.MonadTall(), layout.Max()],
     }),
-    ("2", {
+    ("i", {
         "label": "sys",
-        "layout": "stack",
-        "layouts": [layout.Stack(), layout.MonadTall(), layout.MonadWide()],
+        "layout": "monadtall",
+        "layouts": [layout.MonadTall(), layout.MonadWide()],
         "spawn": ["alacritty", "alacritty"]
     }),
-    ("3", {
+    ("o", {
         "label": "www",
         "layout": "max",
         "layouts": [layout.Max()],
         "spawn": ["qutebrowser"]
     }),
-    ("4", {
-        "label": "run",
-        "layout": "monadwide",
-        "layouts": [layout.Stack(), layout.MonadTall(), layout.MonadWide()],
-    }),
-    ("5", {
-        "label": "ssh",
+    ("m", {
+        "label": "cht",
         "layout": "max",
         "layouts": [layout.Max(), layout.MonadTall(), layout.MonadWide()],
     }),
-    ("8", {
-        "label": "doc",
-        "layout": "max",
-        "layouts": [layout.Max(), layout.MonadTall(), layout.MonadWide()],
-    }),
-    ("9", {
-        "label": "dck",
+    ("n", {
+        "label": "etc",
         "layout": "monadtall",
         "layouts": [layout.Stack(), layout.MonadTall(), layout.MonadWide()],
     }),
