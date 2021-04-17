@@ -2,6 +2,10 @@ source "%val{config}/plugins/plug.kak/rc/plug.kak"
 
 plug "andreyorst/plug.kak" noload
 
+plug "raiguard/one.kak" theme config %{
+	colorscheme one-dark
+}
+
 eval %sh{kak-lsp --kakoune -s $kak_session}  # Not needed if you load it with plug.kak.
 
 hook global WinSetOption filetype=go %{
