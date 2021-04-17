@@ -90,7 +90,7 @@ keys = [
     ),
     Key(
         [mod], "Return", 
-        lazy.spawn("alacritty")
+        lazy.spawn("alacritty -e elvish")
     ),
 ]
 
@@ -160,8 +160,9 @@ widget_defaults = dict(
 extension_defaults = widget_defaults.copy()
 
 screens = [
+    Screen(),
     Screen(
-        bottom=bar.Bar(
+        bottom = bar.Bar(
             [
                 widget.GroupBox(),
                 widget.Prompt(),
@@ -169,15 +170,6 @@ screens = [
                 widget.Systray(),
                 widget.Notify(),
                 widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
-            ],
-            24,
-        ),
-    ),
-    Screen(
-        bottom=bar.Bar(
-            [
-                widget.GroupBox(),
-                widget.WindowName(),
             ],
             24,
         ),
