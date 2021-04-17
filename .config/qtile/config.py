@@ -72,39 +72,53 @@ keys = [
     ),
 ]
 
+colors = {
+    "background": "282c34",
+    "foreground": "abb2bf",
+    "focused": "528bff",
+    "unfocused": "3e4451",
+    "urgent": "e06c75",
+}
+
+layouts = {
+    "tall": layout.MonadTall(border_normal = colors["unfocused"], border_focus = colors["focused"]),
+    "wide": layout.MonadWide(border_normal = colors["unfocused"], border_focus = colors["focused"]),
+    "max": layout.Max()
+}
+
 groups = [Group(name, **kwargs) for name, kwargs in [
     ("u", {
         "label": "dev",
         "layout": "max",
-        "layouts": [layout.MonadTall(), layout.Max()],
+        "layouts": [layouts["tall"], layouts["max"]],
     }),
     ("i", {
         "label": "sys",
         "layout": "monadtall",
-        "layouts": [layout.MonadTall(), layout.MonadWide()],
+        "layouts": [layouts["tall"], layouts["wide"]],
         "spawn": ["alacritty", "alacritty"]
     }),
     ("o", {
         "label": "www",
         "layout": "max",
-        "layouts": [layout.Max()],
+        "layouts": [layouts["max"]],
         "spawn": ["qutebrowser"]
     }),
     ("m", {
         "label": "cht",
         "layout": "max",
-        "layouts": [layout.Max(), layout.MonadTall(), layout.MonadWide()],
+        "layouts": [layouts["max"], layouts["tall"], layouts["wide"]],
         "spawn": ["element-desktop"]
     }),
     ("n", {
         "label": "etc",
         "layout": "monadtall",
-        "layouts": [layout.Stack(), layout.MonadTall(), layout.MonadWide()],
+        "layouts": [layout.Stack(), layouts["tall"], layouts["wide"]],
     }),
     #("0", {
     #    "label": "mus",
     #    "layout": "max",
-    #    "layouts": [layout.Max()],
+    #    "layouts": [layouts["max"]],
     #    "spawn": ["alacritty -e vimpc", "alacritty -e pulsemixer"]
     #}),
 ]]
@@ -125,14 +139,22 @@ screens = [
     Screen(
         bottom = bar.Bar(
             [
-                widget.GroupBox(),
-                widget.Prompt(),
-                widget.WindowName(),
+                widget.GroupBox(
+                    highlight_method = "text",
+                    active = colors["unfocused"],
+                    inactive = colors["unfocused"],
+                    this_current_screen_border = colors["focused"],
+                    urgent_text = colors["urgent"],
+                ),
+                widget.Prompt(foreground = colors["foreground"]),
+                widget.WindowName(foreground = colors["foreground"]),
                 widget.Systray(),
-                widget.Notify(),
-                widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
+                widget.Notify(foreground = colors["foreground"]),
+                widget.Clock(foreground = colors["foreground"], format="%Y-%m-%d %a %I:%M %p"),
             ],
             24,
+            background = colors["background"],
+            foreground = colors["foreground"],
         ),
     ),
 ]
