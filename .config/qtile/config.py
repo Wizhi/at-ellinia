@@ -94,6 +94,7 @@ groups = [Group(name, **kwargs) for name, kwargs in [
         "label": "cht",
         "layout": "max",
         "layouts": [layout.Max(), layout.MonadTall(), layout.MonadWide()],
+        "spawn": ["element-desktop"]
     }),
     ("n", {
         "label": "etc",
