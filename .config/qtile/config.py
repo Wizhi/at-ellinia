@@ -21,7 +21,8 @@ keys = [
         lazy.window.kill()
     ),
     # Screen
-    Key([mod, "control"], "j",
+    Key(
+        [mod, "control"], "j",
         lazy.next_screen()
     ),
     Key([mod, "control"], "k",
@@ -39,7 +40,7 @@ keys = [
     Key(
         [mod], "k", 
         lazy.layout.up()
-        ),
+    ),
     Key(
         [mod, "shift"], "j",
         lazy.layout.shuffle_down()
@@ -86,7 +87,8 @@ keys = [
     ),
     # Application
     Key(
-        [mod], "r", lazy.spawncmd()
+        [mod], "r",
+        lazy.spawncmd()
     ),
     Key(
         [mod], "Return", 
