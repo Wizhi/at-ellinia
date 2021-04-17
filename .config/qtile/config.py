@@ -160,7 +160,8 @@ screens = [
     ),
 ]
 
-# Drag floating layouts.
+follow_mouse_focus = False
+cursor_warp = True
 mouse = [
     Drag([mod], "Button1", lazy.window.set_position_floating(),
          start=lazy.window.get_position()),
@@ -168,10 +169,6 @@ mouse = [
          start=lazy.window.get_size()),
     Click([mod], "Button2", lazy.window.bring_to_front())
 ]
-
-follow_mouse_focus = False
-bring_front_click = False
-cursor_warp = False
 floating_layout = layout.Floating(float_rules=[
     {"wmclass": "confirm"},
     {"wmclass": "dialog"},
@@ -188,6 +185,7 @@ floating_layout = layout.Floating(float_rules=[
     {"wname": "pinentry"}, # GPG key password entry
     {"wmclass": "ssh-askpass"}, # ssh-askpass
 ])
+
 auto_fullscreen = True
 focus_on_window_activation = "smart"
 
