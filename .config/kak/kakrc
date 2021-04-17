@@ -6,15 +6,17 @@ plug "raiguard/one.kak" theme config %{
 	colorscheme one-dark
 }
 
-eval %sh{kak-lsp --kakoune -s $kak_session}  # Not needed if you load it with plug.kak.
+plug "kak-lsp/kak-lsp" do %{
+	cargo install --locked --force --path .
+} config ${
+	hook global WinSetOption filetype=go %{
+		lsp-enable-window
+		lsp-auto-hover-enable
 
-hook global WinSetOption filetype=go %{
-	lsp-enable-window
-	lsp-auto-hover-enable
+		hook window BufWritePre .* lsp-formatting-sync
 
-	hook window BufWritePre .* lsp-formatting-sync
-
-	map global user l %{: enter-user-mode lsp<ret>} -docstring "LSP mode"
+		map global user l %{: enter-user-mode lsp<ret>} -docstring "LSP mode"
+	}
 }
 
 hook global WinCreate ^[^*]+$ %{
