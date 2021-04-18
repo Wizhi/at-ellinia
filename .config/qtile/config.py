@@ -108,7 +108,7 @@ groups = [Group(name, **kwargs) for name, kwargs in [
         "label": "cht",
         "layout": "max",
         "layouts": [layouts["max"], layouts["tall"], layouts["wide"]],
-        "spawn": ["element-desktop"]
+        "spawn": []
     }),
     ("n", {
         "label": "etc",
