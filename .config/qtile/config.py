@@ -113,7 +113,7 @@ groups = [Group(name, **kwargs) for name, kwargs in [
     ("n", {
         "label": "etc",
         "layout": "monadtall",
-        "layouts": [layout.Stack(), layouts["tall"], layouts["wide"]],
+        "layouts": [layouts["tall"], layouts["wide"]],
     }),
     #("0", {
     #    "label": "mus",
