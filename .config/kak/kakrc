@@ -8,7 +8,7 @@ plug "raiguard/one.kak" theme config %{
 
 plug "kak-lsp/kak-lsp" do %{
 	cargo install --locked --force --path .
-} config ${
+} config %{
 	hook global WinSetOption filetype=go %{
 		lsp-enable-window
 		lsp-auto-hover-enable
