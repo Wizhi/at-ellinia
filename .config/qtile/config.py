@@ -141,7 +141,7 @@ screens = [
             [
                 widget.GroupBox(
                     highlight_method = "text",
-                    active = colors["unfocused"],
+                    active = colors["foreground"],
                     inactive = colors["unfocused"],
                     this_current_screen_border = colors["focused"],
                     urgent_text = colors["urgent"],
