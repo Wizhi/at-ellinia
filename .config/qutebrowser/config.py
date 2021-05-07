@@ -4,6 +4,8 @@
 
 config.load_autoconfig(False)
 
+config.bind(';m', 'hint links spawn mpv {hint-url}')
+
 config.set('content.cookies.accept', 'all', 'chrome-devtools://*')
 config.set('content.cookies.accept', 'all', 'devtools://*')
 
