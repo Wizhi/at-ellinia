@@ -6,6 +6,8 @@ plug "raiguard/one.kak" theme config %{
 	colorscheme one-dark
 }
 
+plug "https://git.tchncs.de/notramo/elvish.kak"
+
 plug "kak-lsp/kak-lsp" do %{
 	cargo install --locked --force --path .
 } config %{
