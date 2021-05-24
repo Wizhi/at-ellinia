@@ -22,7 +22,7 @@ plug "kak-lsp/kak-lsp" do %{
 }
 
 hook global WinCreate ^[^*]+$ %{
-    add-highlighter window number-lines
+    add-highlighter window/ number-lines -hlcursor
 }
 
 hook global RegisterModified 'y' %{ nop %sh{
