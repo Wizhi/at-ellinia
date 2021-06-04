@@ -61,6 +61,10 @@ keys = [
         [mod], "l",
         lazy.layout.grow_main(),
     ),
+    Key(
+        [mod], "f",
+        lazy.window.toggle_fullscreen(),
+    ),
     # Application
     Key(
         [mod], "r",
