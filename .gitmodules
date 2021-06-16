@@ -1,18 +1,6 @@
 [submodule ".config/zathura/base16-zathura"]
 	path = .config/zathura/base16-zathura
 	url = https://github.com/HaoZeke/base16-zathura
-[submodule "zsh/autosuggestions"]
-	path = .config/zsh/plugins/autosuggestions
-	url = https://github.com/zsh-users/zsh-autosuggestions
-[submodule "zsh/completions"]
-	path = .config/zsh/plugins/completions
-	url = https://github.com/zsh-users/zsh-completions
-[submodule "zsh/syntax-highlighting"]
-	path = .config/zsh/plugins/syntax-highlighting
-	url = https://github.com/zsh-users/zsh-syntax-highlighting
-[submodule "zsh/powerlevel10k"]
-	path = .config/zsh/plugins/powerlevel10k
-	url = https://github.com/romkatv/powerlevel10k
 [submodule "kak/plug.kak"]
 	path = .config/kak/plugins/plug.kak
 	url = https://github.com/andreyorst/plug.kak
