@@ -1,57 +1,6 @@
 [submodule ".config/zathura/base16-zathura"]
 	path = .config/zathura/base16-zathura
 	url = https://github.com/HaoZeke/base16-zathura
-[submodule "nvim/ale"]
-	path = .config/nvim/pack/wizhi/opt/ale
-	url = https://github.com/dense-analysis/ale
-[submodule "nvim/emmet-vim"]
-	path = .config/nvim/pack/wizhi/opt/emmet-vim
-	url = https://github.com/mattn/emmet-vim
-[submodule "nvim/vim-fugitive"]
-	path = .config/nvim/pack/wizhi/start/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive
-[submodule "nvim/fzf"]
-	path = .config/nvim/pack/wizhi/start/fzf
-	url = https://github.com/junegunn/fzf
-[submodule "nvim/fzf.vim"]
-	path = .config/nvim/pack/wizhi/start/fzf.vim
-	url = https://github.com/junegunn/fzf.vim
-[submodule "nvim/nvim-lspconfig"]
-	path = .config/nvim/pack/wizhi/start/nvim-lspconfig
-	url = https://github.com/neovim/nvim-lspconfig
-[submodule "nvim/omnisharp-vim"]
-	path = .config/nvim/pack/wizhi/start/omnisharp-vim
-	url = https://github.com/OmniSharp/omnisharp-vim
-[submodule "nvim/vim-polyglot"]
-	path = .config/nvim/pack/wizhi/start/vim-polyglot
-	url = https://github.com/sheerun/vim-polyglot
-[submodule "nvim/ncm2"]
-	path = .config/nvim/pack/wizhi/start/ncm2
-	url = https://github.com/ncm2/ncm2
-[submodule "nvim/ncm2-path"]
-	path = .config/nvim/pack/wizhi/start/ncm2-path
-	url = https://github.com/ncm2/ncm2-path
-[submodule "nvim/yarp"]
-	path = .config/nvim/pack/wizhi/start/nvim-yarp
-	url = https://github.com/roxma/nvim-yarp
-[submodule "nvim/nerdtree"]
-	path = .config/nvim/pack/wizhi/start/nerdtree
-	url = https://github.com/preservim/nerdtree
-[submodule "nvim/nerdtree-git"]
-	path = .config/nvim/pack/wizhi/start/nerdtree-git
-	url = https://github.com/Xuyuanp/nerdtree-git-plugin
-[submodule "nvim/vim-airline"]
-	path = .config/nvim/pack/wizhi/start/vim-airline
-	url = https://github.com/vim-airline/vim-airline
-[submodule "nvim/vim-airline-themes"]
-	path = .config/nvim/pack/wizhi/start/vim-airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "nvim/base16-vim"]
-	path = .config/nvim/pack/wizhi/start/base16-vim
-	url = https://github.com/chriskempson/base16-vim
-[submodule "nvim/vim-gitgutter"]
-	path = .config/nvim/pack/wizhi/start/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter
 [submodule "zsh/autosuggestions"]
 	path = .config/zsh/plugins/autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
