@@ -64,24 +64,9 @@
 [submodule "zsh/powerlevel10k"]
 	path = .config/zsh/plugins/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k
-[submodule "nvim/vim-startify"]
-	path = .config/nvim/pack/wizhi/start/vim-startify
-	url = https://github.com/mhinz/vim-startify
-[submodule "nvim/editorconfig-vim"]
-	path = .config/nvim/pack/wizhi/start/editorconfig-vim
-	url = https://github.com/editorconfig/editorconfig-vim
-[submodule "nvim/seoul256.vim"]
-	path = .config/nvim/pack/wizhi/start/seoul256.vim
-	url = https://github.com/junegunn/seoul256.vim
-[submodule "nvim/vim-one"]
-	path = .config/nvim/pack/wizhi/start/vim-one
-	url = https://github.com/rakr/vim-one
-[submodule "nvim/papercolor-theme"]
-	path = .config/nvim/pack/wizhi/start/papercolor-theme
-	url = https://github.com/NLKNguyen/papercolor-theme
-[submodule "nvim/apprentice"]
-	path = .config/nvim/pack/wizhi/start/apprentice
-	url = https://github.com/romainl/Apprentice
 [submodule "kak/plug.kak"]
 	path = .config/kak/plugins/plug.kak
 	url = https://github.com/andreyorst/plug.kak
+[submodule "kakoune"]
+	path = .config/kak
+	url = https://github.com/Wizhi/dot-kakoune
