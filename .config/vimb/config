@@ -5,6 +5,8 @@ nunmap O
 nnoremap O :tabopen<Space>
 nnoremap go :open <C-R>%
 nnoremap gO :tabopen <C-R>%
+nnoremap gj G
+nnoremap gk gg
 nnoremap u U
 nnoremap U u
 nnoremap y Y
