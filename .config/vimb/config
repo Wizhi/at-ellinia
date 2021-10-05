@@ -1,14 +1,18 @@
 set hint-keys=asdfg;lkjh
 set editor-command=alacritty -e kak %s
 
+# Use capital O for "open in tab" navigation
 nunmap O
 nnoremap O :tabopen<Space>
 nnoremap go :open <C-R>%
 nnoremap gO :tabopen <C-R>%
+# Kakoune inspired motions
 nnoremap gj G
 nnoremap gk gg
+# Open last closed page in new window by default
 nnoremap u U
 nnoremap U u
+# More sane yanking
 nnoremap y Y
 nnoremap Y y
 
