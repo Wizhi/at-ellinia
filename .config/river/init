@@ -114,16 +114,6 @@ riverctl map normal $mod Right send-layout-cmd rivertile "main-location right"
 riverctl map normal $mod Down  send-layout-cmd rivertile "main-location bottom"
 riverctl map normal $mod Left  send-layout-cmd rivertile "main-location left"
 
-# Declare a passthrough mode. This mode has only a single mapping to return to
-# normal mode. This makes it useful for testing a nested wayland compositor
-riverctl declare-mode passthrough
-
-# Mod+F11 to enter passthrough mode
-riverctl map normal $mod F11 enter-mode passthrough
-
-# Mod+F11 to return to normal mode
-riverctl map passthrough $mod F11 enter-mode normal
-
 # Set background and border color
 riverctl background-color 0x002b36
 riverctl border-color-focused 0x93a1a1
