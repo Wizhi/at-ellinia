@@ -132,9 +132,6 @@ riverctl border-color-unfocused 0x586e75
 # Set repeat rate
 riverctl set-repeat 50 300
 
-# Set app-ids and titles of views which should use client side decorations
-riverctl csd-filter-add app-id "gedit"
-
 # Set and exec into the default layout generator, rivertile.
 # River will send the process group of the init executable SIGTERM on exit.
 riverctl default-layout rivertile
