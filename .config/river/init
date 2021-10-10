@@ -99,4 +99,4 @@ riverctl set-repeat 50 300
 # River will send the process group of the init executable SIGTERM on exit.
 riverctl default-layout rivertile
 
-exec rivertile
+exec rivertile -view-padding 3
