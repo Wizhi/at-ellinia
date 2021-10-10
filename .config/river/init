@@ -100,7 +100,7 @@ map_tags o $(tags 3)
 map_tags n $(tags 4)
 map_tags m $(tags 5)
 # Affects all tags
-map_tags_set h $(($(tags 32) - 1))
+map_tags_set y $(($(tags 32) - 1))
 
 # Mod+Space to toggle float
 riverctl map normal $mod Space toggle-float
