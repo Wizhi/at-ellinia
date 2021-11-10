@@ -1,9 +1,6 @@
 [submodule ".config/zathura/base16-zathura"]
 	path = .config/zathura/base16-zathura
 	url = https://github.com/HaoZeke/base16-zathura
-[submodule "kak/plug.kak"]
-	path = .config/kak/plugins/plug.kak
-	url = https://github.com/andreyorst/plug.kak
 [submodule "elvish"]
 	path = .config/elvish
 	url = git@github.com:Wizhi/dot-elvish.git
