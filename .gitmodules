@@ -8,7 +8,3 @@
 	path = .config/kak
 	url = https://github.com/Wizhi/dot-kakoune
 	ignore = untracked
-[submodule "elvish"]
-	path = .elvish
-	url = https://github.com/Wizhi/dot-elvish
-	ignore = untracked
