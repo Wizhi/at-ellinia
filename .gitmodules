@@ -4,10 +4,6 @@
 [submodule "kak/plug.kak"]
 	path = .config/kak/plugins/plug.kak
 	url = https://github.com/andreyorst/plug.kak
-[submodule "kakoune"]
-	path = .config/kak
-	url = https://github.com/Wizhi/dot-kakoune
-	ignore = untracked
 [submodule "elvish"]
 	path = .config/elvish
 	url = git@github.com:Wizhi/dot-elvish.git
