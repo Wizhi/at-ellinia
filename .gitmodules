@@ -8,3 +8,6 @@
 	path = .config/kak
 	url = https://github.com/Wizhi/dot-kakoune
 	ignore = untracked
+[submodule "elvish"]
+	path = .config/elvish
+	url = git@github.com:Wizhi/dot-elvish.git
