@@ -7,6 +7,9 @@ riverctl map normal $mod+Shift Return spawn alacritty
 # Mod+P to run applications
 riverctl map normal $mod P spawn bemenu-run
 
+riverctl map normal $mod       Space spawn "makoctl dismiss"
+riverctl map normal $mod+Shift Space spawn "makoctl dismiss --all"
+
 # Mod+Q to close the focused view
 riverctl map normal $mod Q close
 
@@ -98,4 +101,5 @@ riverctl set-repeat 50 300
 # River will send the process group of the init executable SIGTERM on exit.
 riverctl default-layout rivertile
 
+exec mako &
 exec rivertile -view-padding 3
