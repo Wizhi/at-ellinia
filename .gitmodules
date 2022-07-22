@@ -1,6 +1,3 @@
-[submodule ".config/zathura/base16-zathura"]
-	path = .config/zathura/base16-zathura
-	url = https://github.com/HaoZeke/base16-zathura
 [submodule "elvish"]
 	path = .config/elvish
 	url = git@github.com:Wizhi/dot-elvish.git
