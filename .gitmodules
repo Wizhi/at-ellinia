@@ -4,6 +4,7 @@
 [submodule "elvish"]
 	path = .config/elvish
 	url = git@github.com:Wizhi/dot-elvish.git
+	branch = main
 [submodule "kakoune"]
 	path = .config/kak
 	url = git@github.com:Wizhi/dot-kakoune.git
