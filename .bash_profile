@@ -1,8 +1,4 @@
-#
-# ~/.bash_profile
-#
+#!/usr/bin/env bash
 
-# See systemd --user ssh-agent
-export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-
+[[ -f ~/.profile ]] && . ~/.profile
 [[ -f ~/.bashrc ]] && . ~/.bashrc

@@ -22,8 +22,4 @@ If this happens, the only fix is to backup the existing files and `dotfiles chec
 
 It seems like autocomplete is broken for the `dotfiles` alias, which really sucks.
 
-# Things to look into
-
-* How to handle differing configurations between machines
-
 [tracking]: https://harfangk.github.io/2016/09/18/manage-dotfiles-with-a-git-bare-repository.html
