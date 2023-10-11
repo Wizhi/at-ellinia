@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+#
+# Deletes all non-primary branches, not merged into the current HEAD.
+#
+
+git branch --merged | sed -E -e '/^[ ]+(main|master)$/d' -e '/^\*/d' | xargs --no-run-if-empty git branch -d 2> /dev/null
