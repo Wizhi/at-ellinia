@@ -26,9 +26,4 @@ It seems like autocomplete is broken for the `dotfiles` alias, which really suck
 
 * How to handle differing configurations between machines
 
-# Improvements
-
-1. Move zsh configuration to own repository
-2. Move neovim configuration to own repository
-
 [tracking]: https://harfangk.github.io/2016/09/18/manage-dotfiles-with-a-git-bare-repository.html
