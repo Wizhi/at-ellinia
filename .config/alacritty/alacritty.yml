@@ -142,7 +142,7 @@ schemes:
       cyan:    '0x5fafaf'
       white:   '0xffffff'
 
-colors: *one-dark
+colors: *one-light
 
 cursor:
   style:
