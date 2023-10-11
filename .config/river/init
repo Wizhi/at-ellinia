@@ -13,6 +13,8 @@ riverctl map normal $mod+Shift Space spawn "makoctl dismiss --all"
 riverctl map normal $mod S spawn 'grim -g "$(slurp)" - | wl-copy'
 riverctl map normal Mod4+Shift S spawn 'grim -g "$(slurp)" "$(echo "$HOME/screenshots/$(date "+%Y%m%d_%H%M%S").png" | tee >(wl-copy -n))"'
 
+riverctl map normal $mod C spawn 'hyprpicker --no-fancy | wl-copy'
+
 # Mod+Q to close the focused view
 riverctl map normal $mod Q close
 
