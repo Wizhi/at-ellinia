@@ -1,0 +1,28 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+span[vimbhint^='label'] {
+    opacity: 1 !important;
+    border: 1px solid #2d2d2d !important;
+    padding: .1em .4em !important;
+    background-color: #f2f0ec !important;
+
+    font: bold 10pt monospace !important;
+    text-transform: uppercase !important;
+    color: #2d2d2d !important;
+}
+
+span[vimbhint='label focus'] {
+    font: bold 13pt monospace !important;
+}
+
+*[vimbhint^='hint'] {
+    background-color: #ffcc66 !important;
+    color: #2d2d2d !important;
+}
+
+*[vimbhint='hint focus'] {
+    background-color: #6699cc !important;
+    color: #2d2d2d !important;
+}
