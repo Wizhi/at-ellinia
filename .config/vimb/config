@@ -1,6 +1,7 @@
 set hint-keys=asdfg;lkjh
 set editor-command=alacritty -e kak %s
 
+set show-titlebar=false
 set stylesheet=true
 
 # Use capital O for "open in tab" navigation
