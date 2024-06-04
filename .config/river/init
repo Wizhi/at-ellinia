@@ -7,6 +7,9 @@ riverctl map normal $mod+Shift Return spawn alacritty
 # Mod+P to run applications
 riverctl map normal $mod P spawn bemenu-run
 
+riverctl map normal $mod       D spawn "passage-bemenu | wl-copy"
+riverctl map normal $mod+Shift D spawn "passage-bemenu | wtype -"
+
 riverctl map normal $mod       Space spawn "makoctl dismiss"
 riverctl map normal $mod+Shift Space spawn "makoctl dismiss --all"
 
