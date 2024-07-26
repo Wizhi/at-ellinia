@@ -10,4 +10,4 @@ name="$(
   bemenu $@
 )"
 
-passage "$name"
+printf '%s' "$(passage "$name" | head -n 1)"
